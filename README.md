@@ -1,8 +1,13 @@
 # 番茄净化
 
-[官网](https://fanqie.goforit.si/) · [插件源](https://apt.mjh.im) · [下载 3.0.3](https://github.com/5hux1n/fanqiefn/releases/tag/v3.0.3)
+[官网](https://fanqie.goforit.si/) · [插件源](https://apt.mjh.im) · [下载 3.0.4](https://github.com/5hux1n/fanqiefn/releases/tag/v3.0.4)
 
 iOS 越狱插件，为番茄小说（com.dragon.read）提供广告与界面净化、通知/小组件伪装、会员状态伪装，并在原生设置菜单加入“番茄净化”二级菜单入口。
+
+## 3.0.4
+
+- 新增书架漫剧推荐、今日听读时长和导入本地书入口的独立隐藏开关，首次默认关闭。
+- 修复会员类型被统一显示为出版 VIP 的问题，保留各卡片的原生类型。
 
 ## 3.0.3
 
@@ -21,13 +26,13 @@ iOS 越狱插件，为番茄小说（com.dragon.read）提供广告与界面净�
 
 会员状态伪装默认开启，到期时间设为北京时间 9999-12-31 23:59:59；这不修改服务端订阅或保证付费内容可用。全局 AVPlayer、头像签名验证和环境检测改动没有移植。
 
-原生“插件总开关”可暂停全部功能及启动页覆盖，保留各分项选择。设置底部显示 3.0.3，并提供作者 GitHub 与插件源入口。更新日志见 [Releases](https://github.com/5hux1n/fanqiefn/releases)。
+原生“插件总开关”可暂停全部功能及启动页覆盖，保留各分项选择。设置底部显示 3.0.4，并提供官网与插件源入口。更新日志见 [Releases](https://github.com/5hux1n/fanqiefn/releases)。
 
 ## 原生设置开关
 
 进入“我的 → 设置”，第一个分区中“清理缓存”上方的“番茄净化”进入二级设置页。入口、分区、菜单行和开关均复用番茄自身的 `SSSettingViewController`、`SSSettingTableViewCell` 和 `SSMaterialSwitch`，没有自绘单元格或滚动保存提示。
 
-共 **插件总开关 + 23 个功能开关 + 默认启动页菜单 + 底部版本/作者/源链接分区**：
+共 **插件总开关 + 26 个功能开关 + 默认启动页菜单 + 底部版本/官网/源链接分区**：
 
 - 插件总开关：位于二级菜单第一行，默认开启；关闭后暂停所有功能及启动页覆盖，保留各分项选择和设置入口。
 
@@ -63,8 +68,8 @@ iOS 越狱插件，为番茄小说（com.dragon.read）提供广告与界面净�
 
 | 方案 | 安装包 | 安装布局 |
 |---|---|---|
-| Rootless | `fanqiefn_3.0.3_iphoneos-arm64.deb` | `/var/jb/Library/MobileSubstrate/DynamicLibraries` |
-| RootHide | `fanqiefn.roothide_3.0.3_iphoneos-arm64e.deb` | `/Library/MobileSubstrate/DynamicLibraries` |
+| Rootless | `fanqiefn_3.0.4_iphoneos-arm64.deb` | `/var/jb/Library/MobileSubstrate/DynamicLibraries` |
+| RootHide | `fanqiefn.roothide_3.0.4_iphoneos-arm64e.deb` | `/Library/MobileSubstrate/DynamicLibraries` |
 
 两种包均含 arm64 与 arm64e 切片；RootHide 原生构建，不能仅改 Rootless 包的 Architecture。对应 dylib 与 SHA256SUMS 同时提供。
 
@@ -81,9 +86,9 @@ dpkg -i fanqiefn_*.deb
 ## 直接下载 v3.0.3
 
 - [fanqiefn.roothide_3.0.3.dylib](https://github.com/5hux1n/fanqiefn/releases/download/v3.0.3/fanqiefn.roothide_3.0.3.dylib)
-- [fanqiefn.roothide_3.0.3_iphoneos-arm64e.deb](https://github.com/5hux1n/fanqiefn/releases/download/v3.0.3/fanqiefn.roothide_3.0.3_iphoneos-arm64e.deb)
+- [fanqiefn.roothide_3.0.4_iphoneos-arm64e.deb](https://github.com/5hux1n/fanqiefn/releases/download/v3.0.3/fanqiefn.roothide_3.0.4_iphoneos-arm64e.deb)
 - [fanqiefn_3.0.3.dylib](https://github.com/5hux1n/fanqiefn/releases/download/v3.0.3/fanqiefn_3.0.3.dylib)
-- [fanqiefn_3.0.3_iphoneos-arm64.deb](https://github.com/5hux1n/fanqiefn/releases/download/v3.0.3/fanqiefn_3.0.3_iphoneos-arm64.deb)
+- [fanqiefn_3.0.4_iphoneos-arm64.deb](https://github.com/5hux1n/fanqiefn/releases/download/v3.0.3/fanqiefn_3.0.4_iphoneos-arm64.deb)
 - [SHA256SUMS](https://github.com/5hux1n/fanqiefn/releases/download/v3.0.3/SHA256SUMS)
 
 [历史版本下载](https://github.com/5hux1n/fanqiefn/releases)
