@@ -1,8 +1,14 @@
 # 番茄净化
 
-[官网](https://fanqie.goforit.si/) · [插件源](https://apt.mjh.im) · [下载 3.0.4](https://github.com/5hux1n/fanqiefn/releases/tag/v3.0.4)
+[官网](https://fanqie.goforit.si/) · [插件源](https://apt.mjh.im) · [下载 3.0.5](https://github.com/5hux1n/fanqiefn/releases/tag/v3.0.5)
 
 iOS 越狱插件，为番茄小说（com.dragon.read）提供广告与界面净化、通知/小组件伪装、会员状态伪装，并在原生设置菜单加入“番茄净化”二级菜单入口。
+
+## 3.0.5
+
+- 新增屏蔽热启动广告开关，减少回到前台时的广告打扰。
+- 新增解除自动阅读广告时长限制开关，保留手动暂停与后台暂停。
+- 两项新开关默认关闭，可在插件设置中按需开启。
 
 ## 3.0.4
 
@@ -26,13 +32,13 @@ iOS 越狱插件，为番茄小说（com.dragon.read）提供广告与界面净�
 
 会员状态伪装默认开启，到期时间设为北京时间 9999-12-31 23:59:59；这不修改服务端订阅或保证付费内容可用。全局 AVPlayer、头像签名验证和环境检测改动没有移植。
 
-原生“插件总开关”可暂停全部功能及启动页覆盖，保留各分项选择。设置底部显示 3.0.4，并提供官网与插件源入口。更新日志见 [Releases](https://github.com/5hux1n/fanqiefn/releases)。
+原生“插件总开关”可暂停全部功能及启动页覆盖，保留各分项选择。设置底部显示 3.0.5，并提供官网与插件源入口。更新日志见 [Releases](https://github.com/5hux1n/fanqiefn/releases)。
 
 ## 原生设置开关
 
 进入“我的 → 设置”，第一个分区中“清理缓存”上方的“番茄净化”进入二级设置页。入口、分区、菜单行和开关均复用番茄自身的 `SSSettingViewController`、`SSSettingTableViewCell` 和 `SSMaterialSwitch`，没有自绘单元格或滚动保存提示。
 
-共 **插件总开关 + 26 个功能开关 + 默认启动页菜单 + 底部版本/官网/源链接分区**：
+共 **插件总开关 + 28 个功能开关 + 默认启动页菜单 + 底部版本/官网/源链接分区**：
 
 - 插件总开关：位于二级菜单第一行，默认开启；关闭后暂停所有功能及启动页覆盖，保留各分项选择和设置入口。
 
@@ -68,10 +74,10 @@ iOS 越狱插件，为番茄小说（com.dragon.read）提供广告与界面净�
 
 | 方案 | 安装包 | 安装布局 |
 |---|---|---|
-| Rootless | `fanqiefn_3.0.4_iphoneos-arm64.deb` | `/var/jb/Library/MobileSubstrate/DynamicLibraries` |
-| RootHide | `fanqiefn.roothide_3.0.4_iphoneos-arm64e.deb` | `/Library/MobileSubstrate/DynamicLibraries` |
+| Rootless | `fanqiefn_3.0.5_arm64.deb` | `/var/jb/Library/MobileSubstrate/DynamicLibraries` |
+| RootHide | `fanqiefn_3.0.5_arm64e.deb` | `/Library/MobileSubstrate/DynamicLibraries` |
 
-两种包均含 arm64 与 arm64e 切片；RootHide 原生构建，不能仅改 Rootless 包的 Architecture。对应 dylib 与 SHA256SUMS 同时提供。
+两种包均含 arm64 与 arm64e 切片；RootHide 原生构建，不能仅改 Rootless 包的 Architecture。本次提供两个 DEB 安装包。
 
 从 [Releases](https://github.com/5hux1n/fanqiefn/releases) 页面下载 `.deb` 文件，使用包管理器（Sileo / Irisin）安装，或通过命令行：
 
@@ -83,12 +89,9 @@ dpkg -i fanqiefn_*.deb
 
 本项目仅供学习和研究使用，请勿用于任何违反法律法规或番茄小说用户协议的用途。使用本插件所产生的任何后果由使用者自行承担。
 
-## 直接下载 v3.0.3
+## 直接下载 v3.0.5
 
-- [fanqiefn.roothide_3.0.3.dylib](https://github.com/5hux1n/fanqiefn/releases/download/v3.0.3/fanqiefn.roothide_3.0.3.dylib)
-- [fanqiefn.roothide_3.0.4_iphoneos-arm64e.deb](https://github.com/5hux1n/fanqiefn/releases/download/v3.0.3/fanqiefn.roothide_3.0.4_iphoneos-arm64e.deb)
-- [fanqiefn_3.0.3.dylib](https://github.com/5hux1n/fanqiefn/releases/download/v3.0.3/fanqiefn_3.0.3.dylib)
-- [fanqiefn_3.0.4_iphoneos-arm64.deb](https://github.com/5hux1n/fanqiefn/releases/download/v3.0.3/fanqiefn_3.0.4_iphoneos-arm64.deb)
-- [SHA256SUMS](https://github.com/5hux1n/fanqiefn/releases/download/v3.0.3/SHA256SUMS)
+- [Rootless · arm64](https://github.com/5hux1n/fanqiefn/releases/download/v3.0.5/fanqiefn_3.0.5_arm64.deb)
+- [RootHide · arm64e](https://github.com/5hux1n/fanqiefn/releases/download/v3.0.5/fanqiefn_3.0.5_arm64e.deb)
 
 [历史版本下载](https://github.com/5hux1n/fanqiefn/releases)
