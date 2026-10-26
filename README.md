@@ -1,8 +1,16 @@
 # 番茄净化
 
-[官网](https://fanqie.goforit.si/) · [插件源](https://apt.mjh.im) · [正式版 3.1.2](https://github.com/5hux1n/fanqiefn/releases/tag/v3.1.2)
+[官网](https://fanqie.goforit.si/) · [插件源](https://apt.mjh.im) · [正式版 3.3.0](https://github.com/5hux1n/fanqiefn/releases/tag/v3.3.0)
 
 iOS 越狱插件，为番茄小说（com.dragon.read）提供广告与界面净化、通知/小组件伪装、会员状态伪装，并在原生设置菜单加入“番茄净化”二级菜单入口。
+
+## 3.3.0
+
+- 新增书城顶部列表自定义隐藏
+- 优化短篇去广告
+- 优化短篇自动解锁并展开全文
+- 新增屏蔽系统通知红点提醒
+- 新增屏蔽内容小组件添加提醒
 
 ## 3.1.2
 
