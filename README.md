@@ -1,8 +1,19 @@
 # 番茄净化
 
-[官网](https://fanqie.goforit.si/) · [插件源](https://apt.mjh.im) · [正式版 3.3.0](https://github.com/5hux1n/fanqiefn/releases/tag/v3.3.0)
+[官网](https://fanqie.goforit.si/) · [插件源](https://apt.mjh.im) · [正式版 3.5.0](https://github.com/5hux1n/fanqiefn/releases/tag/v3.5.0)
 
 iOS 越狱插件，为番茄小说（com.dragon.read）提供广告与界面净化、通知/小组件伪装、会员状态伪装，并在原生设置菜单加入“番茄净化”二级菜单入口。
+
+## 3.5.0
+
+- 新增底部导航玻璃效果（iOS 26+）
+- 新增底部导航玻璃参数调节（iOS 26+）
+- 新增仿液态玻璃（iOS 26 以下）
+- 新增双指长按底部导航菜单手势
+- 新增隐藏看书页改编剧场入口
+- 新增导入导出、清除插件配置
+- 优化全局广告过滤
+- 修复章末评论隐藏失效的问题
 
 ## 3.3.0
 
@@ -100,12 +111,12 @@ iOS 越狱插件，为番茄小说（com.dragon.read）提供广告与界面净�
 
 在 Sileo / Irisin 添加 `https://apt.mjh.im`，搜索“番茄净化”；或从 [官网](https://fanqie.goforit.si/#download) 选择适合的方案。
 
-当前正式版本为 3.1.2，提供混淆安装包。
+当前正式版本为 3.5.0，提供混淆安装包。
 
 | 方案 | 安装包 | 安装布局 |
 |---|---|---|
-| Rootless | `fanqiefn_3.1.2_arm64.deb` | `/var/jb/Library/MobileSubstrate/DynamicLibraries` |
-| RootHide | `fanqiefn_3.1.2_arm64e.deb` | `/Library/MobileSubstrate/DynamicLibraries` |
+| Rootless | `fanqiefn_3.5.0_arm64.deb` | `/var/jb/Library/MobileSubstrate/DynamicLibraries` |
+| RootHide | `fanqiefn_3.5.0_arm64e.deb` | `/Library/MobileSubstrate/DynamicLibraries` |
 
 两种包均含 arm64 与 arm64e 切片；RootHide 原生构建，不能仅改 Rootless 包的 Architecture。本轮仅交付两个 DEB。
 
@@ -115,7 +126,7 @@ iOS 越狱插件，为番茄小说（com.dragon.read）提供广告与界面净�
 dpkg -i fanqiefn_*.deb
 ```
 
-## 直接下载 v3.1.2
+## 直接下载 v3.5.0
 
-- [Rootless · arm64](https://github.com/5hux1n/fanqiefn/releases/download/v3.1.2/fanqiefn_3.1.2_arm64.deb)
-- [RootHide · arm64e](https://github.com/5hux1n/fanqiefn/releases/download/v3.1.2/fanqiefn_3.1.2_arm64e.deb)
+- [Rootless · arm64](https://github.com/5hux1n/fanqiefn/releases/download/v3.5.0/fanqiefn_3.5.0_arm64.deb)
+- [RootHide · arm64e](https://github.com/5hux1n/fanqiefn/releases/download/v3.5.0/fanqiefn_3.5.0_arm64e.deb)
